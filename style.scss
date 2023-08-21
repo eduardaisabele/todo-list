@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+
+$green: #10bf10e6;
+$gray-light: #f2f2f2;
+$gray-dark: #D1D1D1;
+$pink: #CE6C49;
+$pink-light: #f3d4a9;
+$red: #ff0000;
+$white: #fff;
+
+body {
+     width: 100%;
+}
+
+.container {
+     height: 100vh;
+     background-image: url('background.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.content {
+     background-color: $gray-dark;
+     border-radius: 6px;
+     width: 410px;
+     padding: 0 20px;
+}
+
+.input-tesk {
+     border: none;
+     border-radius: 6px;
+     margin: 20px 0;
+     padding: 10px;
+     outline: none;
+
+     height: 35px;
+     width: 250px;
+     
+}
+
+.button-add {
+     border: none;
+     background-color: $pink;
+     border-radius: 6px;
+     color: $white;
+     cursor: pointer;
+     font-weight: 600;
+
+     margin-left: 10px;
+     padding: 0 15px;
+     height: 35px;
+}
+
+.button-add:hover {
+     transition: ease-in-out 300ms;
+     background-color: #d1623a;
+}
+
+.task {
+     border-radius: 6px;
+     background-color: $gray-light;
+     box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+
+     font-size: .9em;
+
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+
+     margin-bottom: 20px;
+     padding: 10px;
+
+     .done {
+          color: $green;
+          cursor: pointer;
+     }
+     
+     .delete {
+          color: $red;
+          cursor: pointer;
+     }
+
+     .done:hover, .delete:hover {
+          animation: translateY 0.8s infinite alternate;
+     }
+}
+
+@keyframes translateY {
+     from{
+          transform: translateY(0) scale(1);
+     }
+     to{
+          transform: translateY(-8px) scale(1.1);
+     }
+}
+
+.check {
+     background-color: $pink-light;
+}
