@@ -39,12 +39,12 @@ const completedTesk = (posicao) => {
      myListOfItens[posicao].completed = !myListOfItens[posicao].completed
 
      showTask();
-}
+};
 
 const deletTask = (posicao) => {
      myListOfItens.splice(posicao, 1);
 
      showTask();
-}
+};
 
 button.addEventListener('click', addTask);

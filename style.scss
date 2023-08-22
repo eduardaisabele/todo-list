@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-* {
-     box-sizing: border-box;
-     font-family: 'Poppins', sans-serif;
-     list-style: none;
-     margin: 0;
-     padding: 0;
-}
-
 $green: #10bf10e6;
 $gray-light: #f2f2f2;
 $gray-dark: #D1D1D1;
@@ -15,6 +7,14 @@ $pink: #CE6C49;
 $pink-light: #f3d4a9;
 $red: #ff0000;
 $white: #fff;
+
+* {
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
 
 body {
      width: 100%;
@@ -60,11 +60,10 @@ body {
      margin-left: 10px;
      padding: 0 15px;
      height: 35px;
-}
-
-.button-add:hover {
-     transition: ease-in-out 300ms;
-     background-color: #d1623a;
+     &:hover {
+          transition: ease-in-out 300ms;
+          background-color: #d1623a;
+     }
 }
 
 .task {
